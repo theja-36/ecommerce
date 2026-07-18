@@ -5,7 +5,6 @@ WORKDIR /app
 COPY package*.json ./
 COPY turbo.json ./
 COPY apps ./apps
-COPY packages ./packages
 
 RUN npm ci
 
