@@ -6,7 +6,7 @@ COPY package*.json ./
 COPY turbo.json ./
 COPY apps ./apps
 
-RUN npm ci
+RUN npm ci --verbose
 
 RUN npm run build -- --filter=@dtc/backend
 
